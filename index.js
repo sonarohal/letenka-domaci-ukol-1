@@ -55,3 +55,5 @@ const flight = {
 document.body.innerHTML = 
 '<p>Flight From: ' + flight.flyFrom + '</p>' + 
 '<p>Flight To: ' + flight.flyTo + '</p>';
+
+const bagDimensions = flight.baglimit; 
