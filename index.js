@@ -64,3 +64,7 @@ document.body.innerHTML +=
 '<p>Maximum height: ' + flight.baglimit.hand_height + ' cm</p>' +
 '<p>Maximum length: ' + flight.baglimit.hand_length + ' cm</p>' +
 '<p>Maximum weight: ' + flight.baglimit.hand_weight + ' kg</p>'; 
+
+const secondBagPriceCZK = Math.ceil(flight.bags_price[2] * flight.conversion.EUR); 
+document.body.innerHTML += 
+'<p>Second Bag Price: ' + secondBagPriceCZK + ' CZK</p>'
