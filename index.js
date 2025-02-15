@@ -53,18 +53,18 @@ const flight = {
 
 
 document.body.innerHTML = 
-'<p>Flight From: ' + flight.flyFrom + '</p>' + 
-'<p>Flight To: ' + flight.flyTo + '</p>';
+'<p>Flight From:<span class="ffrom"> ' + flight.flyFrom + '</span></p>' + 
+'<p>Flight To:<span class="fto"> ' + flight.flyTo + '</p>';
 
 const bagDimensions = flight.baglimit; 
 
 const { hand_width, hand_height, hand_length, hand_weight } = flight.baglimit;
 document.body.innerHTML += 
-'<p>Maximum width: ' + flight.baglimit.hand_width + ' cm</p>' +
-'<p>Maximum height: ' + flight.baglimit.hand_height + ' cm</p>' +
-'<p>Maximum length: ' + flight.baglimit.hand_length + ' cm</p>' +
-'<p>Maximum weight: ' + flight.baglimit.hand_weight + ' kg</p>'; 
+'<p>Maximum width:<span class="maximum"> ' + flight.baglimit.hand_width + ' cm</p>' +
+'<p>Maximum height:<span class="maximum"> ' + flight.baglimit.hand_height + ' cm</p>' +
+'<p>Maximum length:<span class="maximum"> ' + flight.baglimit.hand_length + ' cm</p>' +
+'<p>Maximum weight:<span class="maximum"> ' + flight.baglimit.hand_weight + ' kg</p>'; 
 
 const secondBagPriceCZK = Math.ceil(flight.bags_price[2] * flight.conversion.EUR); 
 document.body.innerHTML += 
-'<p>Second Bag Price: ' + secondBagPriceCZK + ' CZK</p>'
+'<p>Second Bag Price:<span class="price"> ' + secondBagPriceCZK + ' CZK</p>'
