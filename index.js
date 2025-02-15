@@ -57,3 +57,10 @@ document.body.innerHTML =
 '<p>Flight To: ' + flight.flyTo + '</p>';
 
 const bagDimensions = flight.baglimit; 
+
+const { hand_width, hand_height, hand_length, hand_weight } = flight.baglimit;
+document.body.innerHTML += 
+'<p>Maximum width: ' + flight.baglimit.hand_width + ' cm</p>' +
+'<p>Maximum height: ' + flight.baglimit.hand_height + ' cm</p>' +
+'<p>Maximum length: ' + flight.baglimit.hand_length + ' cm</p>' +
+'<p>Maximum weight: ' + flight.baglimit.hand_weight + ' kg</p>'; 
